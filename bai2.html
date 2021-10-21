@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let number = [1,1,2,3,4,'a','d','a',6,65]
+  let number2 = prompt('nhap ky tu')
+  function number3(num) {
+    let count = 0
+    for (let i = 0; i < num.length; i++) {
+      if (number2===num[i]) {
+        count++
+      }else {
+        continue;
+      }
+    }alert('so ky tu ' + number2 + ' la : ' + count)
+  }
+  number3(number)
+</script>
+</body>
+</html>

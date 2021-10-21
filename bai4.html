@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let total = 0
+  function display() {
+      for (let i = 0; i < 500; i++) {
+          let check = true
+          if (i<2) {
+              continue;
+          }else {
+              for (let j = 2; j < i - 1; j++) {
+                  if (i % j === 0) {
+                      check = false
+                      break;
+                  }
+              }
+          }if (check) {
+              total+=i
+          }
+      }document.write(total)
+  }
+  display()
+
+</script>
+</body>
+</html>

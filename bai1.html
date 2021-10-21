@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let number = [1,2,3,4,5,6,7,8,9,0,12,14,13,116]
+  let count = 0
+  function display(num) {
+    for (let i = 0; i < num.length; i++) {
+      if (num[i]<1) {
+        continue;
+      }else if (num[i]%2===0) {
+        count++
+      }else {
+        continue;
+      }
+    }alert('so luong cac so chan co trong mang la : ' + count)
+  }
+  display(number)
+</script>
+</body>
+</html>
